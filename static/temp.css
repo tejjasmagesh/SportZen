@@ -1,0 +1,11 @@
+
+
+
+
+.features {
+	text-align: center;
+}
+.owl-carousel .owl-item img {
+	display: inline-block !important;
+	width: auto !important;
+}

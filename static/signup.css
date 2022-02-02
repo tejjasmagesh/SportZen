@@ -1,0 +1,132 @@
+body {
+  font-family: "Karla", sans-serif;
+  background-color: #C8EBF9;
+  min-height: 100vh; }
+
+
+
+
+
+.brand-wrapper {
+  margin-bottom: 30px; }
+  .brand-wrapper .logo {
+    height: 37px; }
+
+.login-card {
+  border: 0;
+  border-radius: 50px;
+  box-shadow: 0 10px 30px 0 rgba(172, 168, 168, 0.43);
+  overflow: hidden; }
+
+  .login-card-img {
+    border-radius: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover; }
+  .login-card .card-body {
+    padding: 100px 60px 60px; }
+    @media (max-width: 10px) {
+      .login-card .card-body {
+        padding: 200px 200px; } }
+  .login-card-description {
+    font-size: 25px;
+    color: #000;
+    font-weight: normal;
+    margin-bottom: 23px; }
+  .login-card form {
+    max-width: 800px; }
+  .login-card .form-control {
+    border: 1px solid #d5dae2;
+    padding: 15px 25px;
+    margin-bottom: 20px;
+    min-height: 45px;
+    font-size: 13px;
+    line-height: 15;
+    font-weight: normal; }
+    .login-card .form-control::-webkit-input-placeholder {
+      color: #919aa3; }
+    .login-card .form-control::-moz-placeholder {
+      color: #919aa3; }
+    .login-card .form-control:-ms-input-placeholder {
+      color: #919aa3; }
+    .login-card .form-control::-ms-input-placeholder {
+      color: #919aa3; }
+    .login-card .form-control::placeholder {
+      color: #919aa3; }
+  .login-card .login-btn {
+    padding: 13px 20px 12px;
+    background-color: #000;
+    border-radius: 4px;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 20px;
+    color: #fff;
+    margin-bottom: 24px; }
+  
+    .login-card .login-btn:hover {
+      border: 1px solid #000;
+      background-color: transparent;
+      color: #000; }
+  .login-card .forgot-password-link {
+    font-size: 14px;
+    color: #919aa3;
+    margin-bottom: 12px; }
+  .login-card-footer-text {
+    font-size: 16px;
+    color: #0d2366;
+    margin-bottom: 60px; }
+    @media (max-width: 767px) {
+      .login-card-footer-text {
+        margin-bottom: 24px; } }
+  .login-card-footer-nav a {
+    font-size: 14px;
+    color: #919aa3; }
+
+/*# sourceMappingURL=login.css.map */
+
+/* footer */
+/* footer */
+ @import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
+
+ body {
+
+     font-family: 'Rubik', sans-serif;
+
+     height: 100 !important
+ }
+
+ .container-fluid {
+     overflow: hidden;
+     margin-top: 250px;
+     background: #262626;
+     color: #627482 !important;
+     margin-bottom: 0;
+     padding-bottom: 0
+ }
+
+ small {
+     font-size: calc(12px + (15 - 12) * ((100vw - 360px) / (1600 - 360))) !important
+ }
+
+ .bold-text {
+     color: #989c9e !important
+ }
+
+ .mt-55 {
+     margin-top: calc(50px + (60 - 50) * ((100vw - 360px) / (1600 - 360))) !important
+ }
+
+ h3 {
+     font-size: calc(34px + (40 - 34) * ((100vw - 360px) / (1600 - 360))) !important
+ }
+
+ .social {
+     font-size: 21px !important
+ }
+
+ .rights {
+     font-size: calc(10px + (12 - 10) * ((100vw - 360px) / (1600 - 360))) !important
+ }
+

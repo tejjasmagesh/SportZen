@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>SignUp</title>
+  <link href="https://fonts.googleapis.com/css?family=Karla:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.8.95/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='signup.css')}}">
+
+
+</head>
+<body>
+  <main class="d-flex align-items-center min-vh-100 py-3 py-md-0">
+    <div class="container">
+      <div class="card login-card">
+        <div class="row no-gutters">
+          <div class="col-md-5">
+
+            <img src="/static/signup1.svg" alt="login" class="login-card-img">
+          </div>
+          <div class="col-md-7">
+            <div class="card-body">
+              <div class="brand-wrapper">
+                <a href=/ class="text-reset">
+                <img src="/static/logo.png" alt="logo" class="logo">
+              </a>
+              </div>
+              <p class="login-card-description">Create an  account</p>
+              <form action="#"method = "POST">
+               <div class="form-group">
+                    <p>Username<span style="color:#FF0000">*</span> : </p>
+                    <label for="username" class="sr-only">Email</label>
+                    <input type="text" name="username" id="username" class="form-control" placeholder="Username"value="{{
+          request.form.username }}" minlength="3" required>
+                  </div>
+                  <div class="form-group">
+                    <p>Name<span style="color:#FF0000">*</span>  : </p>
+                    <label for="name" class="sr-only">Email</label>
+                    <input type="name" name="name" id="Name" class="form-control" placeholder="Name"value="{{
+          request.form.name }}" required>
+                  </div>
+                  <div class="form-group">
+                    <p>Email-id<span style="color:#FF0000">*</span>  : </p>
+                    <label for="email" class="sr-only">Email</label>
+                    <input type="email" name="email" id="email" class="form-control" placeholder="Email address"value="{{
+          request.form.email }}" required>
+                  </div>
+                           <div class="form-group">
+                    <p>Phone-number (excl country code)<span style="color:#FF0000">*</span>  : </p>
+                    <label for="text" class="sr-only">phone-number</label>
+                    <input type="text" name="number" id="number" class="form-control" placeholder="+91-xxxxxxxxxx"value="{{
+          request.form.number }}" minlength="10" required>
+                  </div>
+
+                  <div class="form-group">
+                    <p>Date-of-Birth<span style="color:#FF0000">*</span>    : </p>
+                    <label for="date" class="sr-only">Date</label>
+                    <input type="date" name="date" id="date" class="form-control" placeholder="Email address"value="{{
+          request.form.date }}" required>
+                  </div>
+
+                  <div class="form-group mb-4">
+                    <p>Password<span style="color:#FF0000">*</span>  : </p>
+                    <label for="password" class="sr-only">Password</label>
+                    <input type="password" name="password" id="password" class="form-control" placeholder="***********"value="{{
+          request.form.password }}" minlength="8" required autocomplete="off">
+                  </div>
+                  <div class="form-group mb-4">
+                    <p>Confirm Password<span style="color:#FF0000">*</span>  : </p>
+                    <label for="passs" class="sr-only">Password</label>
+                    <input type="password" name="passs" id="passs" class="form-control" placeholder="***********" value="{{
+          request.form.passs }}" minlength="8" required autocomplete="off">
+                  </div>
+                                    <div class="form-group">
+                    <p>Address  : </p>
+                    <label for="name" class="sr-only">Email</label>
+                    <input type="name" name="address" id="address" class="form-control" placeholder="address"value="{{
+          request.form.address }}">
+                  </div>                                   <div class="form-group">
+                    <p>City  : </p>
+                    <label for="name" class="sr-only">Email</label>
+                    <input type="name" name="city" id="city" class="form-control" placeholder="city"value="{{
+          request.form.city }}">
+                  </div>                                    <div class="form-group">
+                    <p>country : </p>
+                    <label for="name" class="sr-only">Email</label>
+                    <input type="name" name="country" id="country" class="form-control" placeholder="country"value="{{
+          request.form.country }}">
+                  </div>                                  <div class="form-group">
+                    <p>PinCode  : </p>
+                    <label for="name" class="sr-only">Email</label>
+                    <input type="name" name="pin" id="pin" class="form-control" placeholder="pincode"value="{{
+          request.form.pin }}">
+                  </div>
+
+<div class="msg"><p style="color:red;">{{msg }}</p></div>
+                  <input name="signup" id="login" class="btn btn-block login-btn mb-4" type="submit" value="signup">
+                </form>
+                
+                <p class="login-card-footer-text">Have an account? <a href=\login class="text-reset">Sign-in here</a></p>
+                <nav class="login-card-footer-nav">
+                  <a href="#">Terms of use.</a>
+                  <a href="#">Privacy policy</a>
+                </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script src="/static/login.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script> 
+  <script src="/static/login.js"></script>
+  <div class="container-fluid pb-0 mb-0 justify-content-center text-light ">
+     <footer>
+         <div class="row my-5 justify-content-center py-5">
+             <div class="col-11">
+                 <div class="row ">
+                     <div class="col-xl-8 col-md-4 col-sm-4 col-12 my-auto mx-auto a">
+                        <a href=/ class="text-reset"> <h3 class="text-muted mb-md-0 mb-5 bold-text">SportZen.</h3></a>
+                     </div>
+                     <div class="col-xl-2 col-md-4 col-sm-4 col-12">
+                         <h6 class="mb-3 mb-lg-4 bold-text "><b>MENU</b></h6>
+                         <ul class="list-unstyled">
+                           <a href=/ class="text-reset">  <li>Home</li> </a>
+                             <li>About</li>
+                             <li>Blog</li>
+                             <li>Portfolio</li>
+                         </ul>
+                     </div>
+                     <div class="col-xl-2 col-md-4 col-sm-4 col-12">
+                         <h6 class="mb-3 mb-lg-4 text-muted bold-text mt-sm-0 mt-5"><b>ADDRESS</b></h6>
+                         <p class="mb-1">605, RATAN ICON BUILDING</p>
+                         <p>SEAWOODS SECTOR</p>
+                     </div>
+                 </div>
+                 <div class="row ">
+                     <div class="col-xl-8 col-md-4 col-sm-4 col-auto my-md-0 mt-5 order-sm-1 order-3 align-self-end">
+                         <p class="social text-muted mb-0 pb-0 bold-text"> <span class="mx-2"><i class="fa fa-facebook" aria-hidden="true"></i></span> <span class="mx-2"><i class="fa fa-linkedin-square" aria-hidden="true"></i></span> <span class="mx-2"><i class="fa fa-twitter" aria-hidden="true"></i></span> <span class="mx-2"><i class="fa fa-instagram" aria-hidden="true"></i></span> </p><small class="rights"><span>&#174;</span> s All Rights Reserved.</small>
+                     </div>
+                     
+                     <div class="col-xl-2 col-md-4 col-sm-4 col-auto order-1 align-self-end ">
+                         <h6 class="mt-55 mt-2 text-muted bold-text"><b>TEJJAS MAGESH</b></h6><small> <span><i class="fa fa-envelope" aria-hidden="true"></i></span>    tejjasmagesh19@gmail.com</small>
+                     </div>
+                     <div class="col-xl-2 col-md-4 col-sm-4 col-auto order-2 align-self-end mt-3 ">
+                         <h6 class="text-muted bold-text"><b>SAICHARAN DAGUMATI</b></h6><small><span><i class="fa fa-envelope" aria-hidden="true"></i></span> dagumatisaicharan@gmail.com</small>
+                     </div>
+                     <div class="col-xl-2 col-md-4 col-sm-4 col-auto order-2 align-self-end mt-3 ">
+                         <h6 class="text-muted bold-text"><b>ALI RIYAZ</b></h6><small><span><i class="fa fa-envelope" aria-hidden="true"></i></span>aliriyazr1@gmail.com</small>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </footer>
+ </div>
+
+</body>
+</html>
