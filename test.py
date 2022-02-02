@@ -1,5 +1,8 @@
 from flask import Flask,redirect,url_for,render_template,request,session,flash
 import nltk
+from _version import __version__
+from ._version import __version__
+
 from nltk.chat.util import Chat, reflections
 import mysql.connector as m
 con=m.connect(host='localhost',user='admin',passwd='mag26751!',database='hello')
