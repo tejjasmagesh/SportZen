@@ -1,10 +1,8 @@
 from flask import Flask,redirect,url_for,render_template,request,session,flash
 import nltk
-from ._version import __version__
-
 from nltk.chat.util import Chat, reflections
 import mysql.connector as m
-con=m.connect(host='localhost',user='admin',passwd='mag26751!',database='hello')
+con=m.connect(host='localhost',user='root',passwd='mag26751!',database='hello')
 
 
 cursor=con.cursor()
@@ -752,8 +750,12 @@ def mybook():
 			dat=cursor.fetchall()
 			st='delete from {} where time="{}"'.format(username+'mybook',time)
 			cursor.execute(st)
+			st='select * from {}'.format(username+'mybook')
+			cursor.execute(st)
+			dat=cursor.fetchall()
 			con.commit()
-			return render_template("mybookings.html",data=dat)
+			msg='Your booking has ben Succesfully cancelled!'
+			return render_template("mybookings.html",data=dat,msg=msg)
 		st='select * from {}'.format(username+'mybook')
 		cursor.execute(st)
 		dat=cursor.fetchall()
@@ -770,5 +772,5 @@ def not_found(e):
   return render_template("404.html")
 
 if __name__=="__main__":
-	app.run(debug=True,host='0,0,0,0')
+	app.run(debug=True)
 	chat() 
